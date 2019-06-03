@@ -867,6 +867,80 @@ void numero0(int8_t red, int8_t green, int8_t blue){
 	
 }
 
+void allgreen(int8_t red, int8_t green, int8_t blue){
+	colorDEFINE(red,green,blue);
+	colorDEFINE(red,green,blue);
+	colorDEFINE(red,green,blue);
+	colorDEFINE(red,green,blue);
+	colorDEFINE(red,green,blue);
+	colorDEFINE(red,green,blue);
+	colorDEFINE(red,green,blue);
+	colorDEFINE(red,green,blue);
+	
+	colorDEFINE(red,green,blue);
+	colorDEFINE(red,green,blue);
+	colorDEFINE(red,green,blue);
+	colorDEFINE(red,green,blue);
+	colorDEFINE(red,green,blue);
+	colorDEFINE(red,green,blue);
+	colorDEFINE(red,green,blue);
+	colorDEFINE(red,green,blue);
+	
+	colorDEFINE(red,green,blue);
+	colorDEFINE(red,green,blue);
+	colorDEFINE(red,green,blue);
+	colorDEFINE(red,green,blue);
+	colorDEFINE(red,green,blue);
+	colorDEFINE(red,green,blue);
+	colorDEFINE(red,green,blue);
+	colorDEFINE(red,green,blue);
+	
+	colorDEFINE(red,green,blue);
+	colorDEFINE(red,green,blue);
+	colorDEFINE(red,green,blue);
+	colorDEFINE(red,green,blue);
+	colorDEFINE(red,green,blue);
+	colorDEFINE(red,green,blue);
+	colorDEFINE(red,green,blue);
+	colorDEFINE(red,green,blue);
+	
+	colorDEFINE(red,green,blue);
+	colorDEFINE(red,green,blue);
+	colorDEFINE(red,green,blue);
+	colorDEFINE(red,green,blue);
+	colorDEFINE(red,green,blue);
+	colorDEFINE(red,green,blue);
+	colorDEFINE(red,green,blue);
+	colorDEFINE(red,green,blue);
+	
+	colorDEFINE(red,green,blue);
+	colorDEFINE(red,green,blue);
+	colorDEFINE(red,green,blue);
+	colorDEFINE(red,green,blue);
+	colorDEFINE(red,green,blue);
+	colorDEFINE(red,green,blue);
+	colorDEFINE(red,green,blue);
+	colorDEFINE(red,green,blue);
+	
+	colorDEFINE(red,green,blue);
+	colorDEFINE(red,green,blue);
+	colorDEFINE(red,green,blue);
+	colorDEFINE(red,green,blue);
+	colorDEFINE(red,green,blue);
+	colorDEFINE(red,green,blue);
+	colorDEFINE(red,green,blue);
+	colorDEFINE(red,green,blue);
+	
+	colorDEFINE(red,green,blue);
+	colorDEFINE(red,green,blue);
+	colorDEFINE(red,green,blue);
+	colorDEFINE(red,green,blue);
+	colorDEFINE(red,green,blue);
+	colorDEFINE(red,green,blue);
+	colorDEFINE(red,green,blue);
+	colorDEFINE(red,green,blue);
+	
+}
 
 
 void letraA(int8_t red, int8_t green, int8_t blue)
