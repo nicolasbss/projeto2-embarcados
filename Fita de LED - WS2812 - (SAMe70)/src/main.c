@@ -59,6 +59,16 @@
 //FLAGS
 volatile Bool new_order = false;
 
+//RTOS
+#define TASK_LED_STACK_SIZE            (4096/sizeof(portSTACK_TYPE))
+#define TASK_LED_STACK_PRIORITY        (tskIDLE_PRIORITY)
+
+//Semaphores
+SemaphoreHandle_t xSemaphoreNEW;
+
+//QueueHandle
+QueueHandle_t xQueueNew;
+
 
 /************************************************************************/
 /* prototypes                                                           */
@@ -82,15 +92,56 @@ void but_callback(void)
 	new_order = true;
 }
 
+void but_callback(void)
+{
+	new_order = true;
+}
+
+void new_order_callback(void)
+{
+	BaseType_t xHigherPriorityTaskWoken = pdFALSE;
+	xSemaphoreGiveFromISR(xSemaphoreNEW, &xHigherPriorityTaskWoken);
+}
 
 /************************************************************************/
 /* funções                                                              */
 /************************************************************************/
 
+
+/* TASKS                                                                */
+/************************************************************************/
+
+void task_led(void *pvParameters){
+	
+	xQueueNew = xQueueCreate( 52, sizeof( char ) );
+	
+	xSemaphoreNEW = xSemaphoreCreateBinary();
+	
+	int newvalue;
+
+	char bufferNOME[8] = {'9','9','7','7'};
+	
+	while(1){
+		if(xSemaphoreTake(xSemaphoreNEW, ( TickType_t ) 0) == pdTRUE ){
+			allgreen(GREEN);
+			allgreen(GREEN);
+			allgreen(GREEN);
+			allgreen(GREEN);
+		}
+		if ( xQueueReceive(xQueueNew, &newvalue, 10)){
+			bufferNOME[0] = newvalue;
+		}
+			
+	}		
+}
+
+
 /************************************************************************/
 /* Main                                                                 */
 /************************************************************************/
 /* Funcao principal chamada na inicalizacao do uC.                      */
+
+
 
 
 
@@ -131,7 +182,7 @@ int main(void)
 	clearLEDs();
 	
 	
-	char bufferNOME[8] = {'1','0','7','7'};
+	char bufferNOME[8] = {'9','9','7','7'};
 		
 	
 	new_order = false;	

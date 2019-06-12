@@ -33,9 +33,9 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING
  14 .debug_line   00008f0b  00000000  00000000  000584f5  2**0
                   CONTENTS, READONLY, DEBUGGING
- 15 .debug_str    0008bbc0  00000000  00000000  00061400  2**0
+ 15 .debug_str    0008bbd4  00000000  00000000  00061400  2**0
                   CONTENTS, READONLY, DEBUGGING
- 16 .debug_frame  0000283c  00000000  00000000  000ecfc0  2**2
+ 16 .debug_frame  0000283c  00000000  00000000  000ecfd4  2**2
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
@@ -6215,14 +6215,14 @@ int main(void)
   40305e:	4798      	blx	r3
 	
 	
-	char bufferNOME[8] = {'1','0','7','7'};
+	char bufferNOME[8] = {'9','9','7','7'};
   403060:	f107 030c 	add.w	r3, r7, #12
   403064:	2200      	movs	r2, #0
   403066:	601a      	str	r2, [r3, #0]
   403068:	605a      	str	r2, [r3, #4]
-  40306a:	2331      	movs	r3, #49	; 0x31
+  40306a:	2339      	movs	r3, #57	; 0x39
   40306c:	733b      	strb	r3, [r7, #12]
-  40306e:	2330      	movs	r3, #48	; 0x30
+  40306e:	2339      	movs	r3, #57	; 0x39
   403070:	737b      	strb	r3, [r7, #13]
   403072:	2337      	movs	r3, #55	; 0x37
   403074:	73bb      	strb	r3, [r7, #14]

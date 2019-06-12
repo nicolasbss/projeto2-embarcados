@@ -10207,7 +10207,7 @@ OUTPUT(Fita de LED - WS2812 - (SAMe70).elf elf32-littlearm)
  .debug_line    0x0000661e      0x819 src/ASF/sam/utils/cmsis/same70/source/templates/system_same70.o
  .debug_line    0x00006e37     0x20d4 src/main.o
 
-.debug_str      0x00000000    0x8bbc0
+.debug_str      0x00000000    0x8bbd4
  .debug_str     0x00000000    0x8580a src/ASF/common/services/clock/same70/sysclk.o
                               0x85eb5 (size before relaxing)
  .debug_str     0x0008580a      0x25a src/ASF/common/services/delay/sam/cycle_counter.o
@@ -10226,8 +10226,8 @@ OUTPUT(Fita de LED - WS2812 - (SAMe70).elf elf32-littlearm)
                               0x82672 (size before relaxing)
  .debug_str     0x000886ea      0x172 src/ASF/sam/utils/cmsis/same70/source/templates/system_same70.o
                               0x727fd (size before relaxing)
- .debug_str     0x0008885c     0x3364 src/main.o
-                              0x89ce7 (size before relaxing)
+ .debug_str     0x0008885c     0x3378 src/main.o
+                              0x89cfb (size before relaxing)
 
 .debug_frame    0x00000000     0x283c
  .debug_frame   0x00000000      0x240 src/ASF/common/services/clock/same70/sysclk.o
